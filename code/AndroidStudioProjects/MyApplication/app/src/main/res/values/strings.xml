@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+</resources>
+<!--这里定义一个应用程序名的字符串，两种方式应用它
+1：在代码中R.string.hello_world
+2:在xml中@string/hello_world
+其中string部分可替换，图片换成drawable，布局换成layout
+例子：
+在Androidmainifest.xml文件中
+<application
+	android:allowBackup="true"
+	andorid:icon="@mipmap/ic_launcher"
+	android:lable="@string/app_name"
+	android:supportsRtl="true"
+	android:theme="@style/apptheme"
+.......
+</application>
+
+
+-->
