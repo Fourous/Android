@@ -1,0 +1,19 @@
+项目的真实目录结构，一般是切到project选项来进行调试
+下面的下拉菜单有许多，有几个重要的或者需要进行改动的：
+1：build.gradle：项目全局构建脚本，通常不需要修改
+2：gradle.properties：项目全局gradle配置文件，这里配置的属性影响项目中所有的gradle编译脚本
+3：gradlelew和gradle.bat：用来在命令行中执行gradle命令，前者是Linux或MAC，后者是win
+4：local.peoperties:用于指定本机中Android SDK的路径，通常自动生成，如果SDK发生改变，改成新位置
+5：seting.gradle:指定项目引入的模块，一般应用只有APP文件夹这一个模块
+6：app:
+build:和外层build类似，包含编译自动生成的文件，不许过多关心
+libs：项目引用第三方jar包，需要放到此目录，自动会添加到构建路径中去
+Androidtest：编写Android test测试用例，可以对项目进行自动化测试
+Java：存Java代码，里面有activity
+res：项目中使用的图片，布局，字符串资源
+一般来说：drawable图片，layout布局，values字符串
+Androidmanifest.xml:经常使用，四大组件，可以在此定义APP权限声明
+test：unit test测试用例，对项目进行自动化测试的另一种方法。
+
+
+出现mipmap，是为了兼容多个版本
